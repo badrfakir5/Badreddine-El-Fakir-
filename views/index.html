@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Badreddine El Fakir </title>
 </head>
-
 <body>
   <header>
     <h1>Badreddine El Fakir</h1>
+    <img class="profile-photo" src="assets/profile.jpg" alt="Badreddine El Fakir" width="160" height="160">
     <hr>
     <p>BSc Software Engineering student at Solent University</p>
-    <nav aria-label="Portfolio">
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
       <a href="projects.html">Projects</a>
-      <a href="#profiles">GitHub &amp; LinkedIn</a>
-      
+      <a href="contact.html">Contact</a>
+      <button id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme"><span aria-hidden="true">☀</span></button>
+
     </nav>
   </header>
 
   <main>
     <section id="projects">
-      <h2>Projects</h2>
+  <div class="section-heading">
+    <h2>Projects</h2>
+    <a href="projects.html">View all projects &rarr;</a>
+  </div>
 
-      <article>
+  <div class="project-grid">
+    <article class="project-card">
+      <span class="project-status">In development</span>
 
-      </article>
-    </section>
+      <h3>Personal Portfolio</h3>
+
+      <p>
+        My software engineering portfolio, built from scratch
+        to showcase my work and practise web development.
+      </p>
+
+      <ul class="tech-list" aria-label="Technologies used">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <p class="project-next">
+        Next step — add project filtering with JavaScript.
+      </p>
+    </article>
+  </div>
+</section>
  
     <section id="profiles">
       <h2>GitHub &amp; LinkedIn</h2>
@@ -36,9 +61,13 @@
         <li><a href="https://www.linkedin.com/in/badreddine-elfakir-54b15b2a5/">LinkedIn</a></li>
     </ul>
     </section>
-    <section>
-      <a href="mailto:badrfakir5@gmail.com">Badrfakir5@gmail.com</a>    
-    </section>
+    <section id="contact">
+      <h2>Get in touch</h2>
+      <p>
+        You can reach me at
+        <a href="mailto:badrfakir5@gmail.com">badrfakir5@gmail.com</a>.
+  </p>
+</section>
 
   </main>
 </body>
